@@ -1,6 +1,7 @@
 name: Publish MCP Server to npm
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
