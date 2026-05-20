@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "drizzle-docs-dev": {
+      "command": "pnpm",
+      "args": [
+        "dlx",
+        "tsx",
+        "./mcp-server/index.ts"
+      ]
+    }
+  }
+}
