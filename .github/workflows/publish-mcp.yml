@@ -37,7 +37,8 @@ jobs:
         run: pnpm run build
 
       - name: Publish to npm
-        run: npm publish ./mcp-server --access public
-        working-directory: .
+        run: |
+          echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" > .npmrc
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
