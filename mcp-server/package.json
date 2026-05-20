@@ -4,7 +4,7 @@
   "description": "An MCP server for the Drizzle ORM documentation",
   "main": "dist/index.js",
   "bin": {
-    "drizzle-docs-mcp": "./dist/index.js"
+    "drizzle-docs-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
