@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'mcp-server/**'
+      - '.github/workflows/publish-mcp.yml'
 
 jobs:
   build-and-publish:
